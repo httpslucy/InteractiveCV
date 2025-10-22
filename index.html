@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Josephine Hadid — CV</title>
+<meta name="description" content="Josephine Hadid — ERP / Business Analyst / ERP Junior Lead. CV." />
+
+<!-- Simple embedded CSS for clean, professional look -->
+<style>
+  :root{
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --text: #111827;
+    --muted: #6b7280;
+    --accent: #0f766e;
+    --gap: 18px;
+    --radius: 12px;
+    --maxw: 980px;
+    color-scheme: light;
+  }
+  [data-theme="dark"]{
+    --bg: #0b1220;
+    --card: #071021;
+    --text: #e6eef6;
+    --muted: #9aa6b2;
+    --accent: #34d399;
+    color-scheme: dark;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: linear-gradient(180deg,var(--bg), #eef2f7 1200px);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    padding:24px;
+    display:flex;
+    justify-content:center;
+  }
+  .wrap{
+    width:100%;
+    max-width:var(--maxw);
+    display:grid;
+    grid-template-columns: 320px 1fr;
+    gap:var(--gap);
+    align-items:start;
+  }
+
+  /* left column */
+  .card{
+    background:var(--card);
+    padding:20px;
+    border-radius:var(--radius);
+    box-shadow: 0 6px 18px rgba(12,20,30,0.06);
+  }
+  .profile{
+    text-align:center;
+  }
+  .name{
+    font-size:1.4rem;
+    font-weight:700;
+    margin-bottom:4px;
+  }
+  .role{ color:var(--muted); margin-bottom:12px; font-size:0.95rem; }
+
+  .contact, .skills, .lang, .refs{
+    margin-top:14px;
+  }
+  .muted{ color:var(--muted); font-size:0.9rem; }
+  .contact p, .skills p, .lang p { margin:8px 0; font-size:0.95rem; }
+
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+  .chip{
+    background:rgba(15,118,110,0.08);
+    padding:6px 10px;
+    border-radius:999px;
+    font-size:0.88rem;
+    color:var(--accent);
+  }
+
+  /* right column - main content */
+  .main{
+    background:var(--card);
+    padding:22px;
+    border-radius:var(--radius);
+    box-shadow: 0 6px 18px rgba(12,20,30,0.06);
+  }
+  .section{
+    margin-bottom:20px;
+  }
+  h3{
+    margin:0 0 10px 0;
+    font-size:1.05rem;
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .job{
+    border-left:3px solid rgba(15,118,110,0.12);
+    padding-left:12px;
+    margin-bottom:12px;
+  }
+  .job .title{ font-weight:600; }
+  .job .company{ color:var(--muted); font-size:0.95rem; margin-bottom:6px; }
+  .job .when{ font-size:0.9rem; color:var(--muted); }
+  ul { margin:8px 0 0 18px; }
+  li { margin-bottom:6px; color:var(--muted); font-size:0.95rem; line-height:1.4; }
+
+  /* top controls */
+  .controls{
+    display:flex;
+    gap:8px;
+    justify-content:flex-end;
+    align-items:center;
+    margin-bottom:12px;
+  }
+  .btn{
+    background:transparent;
+    border:1px solid rgba(15,118,110,0.12);
+    padding:8px 10px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:0.9rem;
+  }
+  .btn.primary{
+    background:var(--accent);
+    color:white;
+    border: none;
+  }
+
+  /* responsive */
+  @media (max-width:900px){
+    .wrap{grid-template-columns:1fr; padding:0 6px;}
+    .controls{justify-content:space-between}
+  }
+
+  /* print-friendly */
+  @media print{
+    body{background: white; padding:0}
+    .wrap{box-shadow:none; grid-template-columns: 1fr;}
+    .controls { display:none }
+    .card, .main{ box-shadow:none; border-radius:0; padding:0; background:transparent;}
+  }
+</style>
+</head>
+<body>
+  <div style="max-width:1200px; width:100%;">
+    <div class="controls" aria-hidden="true">
+      <button class="btn" onclick="toggleTheme()" title="Toggle dark/light">Toggle theme</button>
+      <button class="btn" onclick="window.print()" title="Print / Save as PDF">Print / Save PDF</button>
+      <a class="btn primary" href="#contact" title="Contact">Contact</a>
+    </div>
+
+    <div class="wrap" id="cv-root">
+      <!-- LEFT column -->
+      <aside class="card">
+        <div class="profile">
+          <div class="name">Josephine Hadid</div>
+          <div class="role">ERP Junior Lead — Business Analyst</div>
+          <div class="muted">Bratislava, Slovakia</div>
+        </div>
+
+        <div class="contact">
+          <h4 style="margin:14px 0 6px 0;">Contact</h4>
+          <p><strong>Phone:</strong> +421 912 785 456</p>
+          <p><strong>Email:</strong> <a href="mailto:josephinehadid@gmail.com">josephinehadid@gmail.com</a></p>
+          <p><strong>Address:</strong> Sancova 26, Bratislava</p>
+        </div>
+
+        <div class="skills">
+          <h4 style="margin:14px 0 6px 0;">Technical skills</h4>
+          <div class="chips">
+            <span class="chip">Excel (expert)</span>
+            <span class="chip">OneStream (intermediate)</span>
+            <span class="chip">JIRA (intermediate)</span>
+            <span class="chip">MS Dynamics 365 (advanced)</span>
+            <span class="chip">Power BI (basic)</span>
+          </div>
+        </div>
+
+        <div class="lang">
+          <h4 style="margin:14px 0 6px 0;">Languages</h4>
+          <p>Slovak — mother language</p>
+          <p>English — C1</p>
+          <p>German — B2</p>
+        </div>
+
+        <div class="refs">
+          <h4 style="margin:14px 0 6px 0;">References</h4>
+          <p>Bailey Dupont — Deloitte / Director of Finance</p>
+          <p>Phone: +421 908 456 785</p>
+          <p>Email: baileydupont@gmail.com</p>
+        </div>
+      </aside>
+
+      <!-- RIGHT column -->
+      <main class="main">
+        <section class="section">
+          <h3>Profile</h3>
+          <p class="muted">I am a motivated, highly analytical and results-driven professional with 6+ years’ experience in ERP. I progressed from Business Transformation Intern to ERP Junior Lead, gaining skills in systems (JIRA, OneStream, M365), program leadership and ERP deployments. (Content populated from user CV.)</p>
+        </section>
+
+        <section class="section">
+          <h3>Work Experience</h3>
+
+          <div class="job">
+            <div class="title">ERP Junior Lead</div>
+            <div class="company">Deloitte — 2025 – 2022</div>
+            <div class="when muted">Responsibilities & achievements</div>
+            <ul>
+              <li>Ensured seamless integration between core ERP modules; coordinated SIT & UAT cycles and tracked issues in JIRA.</li>
+              <li>OneStream — configuration and deployment of financial planning & reporting.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="title">Business Analyst</div>
+            <div class="company">Deloitte — 2022 – 2019</div>
+            <ul>
+              <li>Advanced Excel and basic Power BI for reporting; supported governance of COA and cost center structures in a global ERP environment.</li>
+              <li>Performed process mapping (As-Is, To-Be), CAR and heatmaps to support transformation initiatives.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="title">Business Transformation Intern (6 months)</div>
+            <div class="company">Deloitte — 2019 – 2018</div>
+            <ul>
+              <li>Administrative and analytical support, managed project files and SharePoint sites; gained understanding of financial statements (P&L, Balance Sheet) and GL systems.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>Education</h3>
+          <div class="job">
+            <div class="title">MS in Accounting & Finance</div>
+            <div class="company">Universität Wien — 2019–2021</div>
+          </div>
+          <div class="job">
+            <div class="title">Bachelor of Science in BA</div>
+            <div class="company">Bratislava University of Economics & Business — 2017–2019</div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>Soft skills</h3>
+          <ul>
+            <li>Strategic leadership, strategic & critical thinking</li>
+            <li>Problem solving, team player</li>
+            <li>Time management, cross-cultural collaboration</li>
+          </ul>
+        </section>
+
+        <section class="section" id="contact">
+          <h3>Contact & actions</h3>
+          <p class="muted">Email: <a href="mailto:josephinehadid@gmail.com">josephinehadid@gmail.com</a> — Phone: +421 912 785 456</p>
+          <p style="margin-top:10px"><a class="btn" href="mailto:josephinehadid@gmail.com?subject=CV%20Inquiry">Message</a>
+             <button class="btn primary" onclick="downloadVCard()">Download vCard</button>
+          </p>
+        </section>
+      </main>
+    </div>
+  </div>
+
+<script>
+  // Theme toggler (stores preference)
+  function toggleTheme(){
+    const root = document.documentElement;
+    if(root.getAttribute('data-theme') === 'dark'){
+      root.removeAttribute('data-theme');
+      localStorage.setItem('cv-theme','light');
+    } else {
+      root.setAttribute('data-theme','dark');
+      localStorage.setItem('cv-theme','dark');
+    }
+  }
+  (function(){
+    const t = localStorage.getItem('cv-theme');
+    if(t === 'dark') document.documentElement.setAttribute('data-theme','dark');
+  })();
+
+  // Simple vCard generator for quick contact download
+  function downloadVCard(){
+    const vcard = [
+      'BEGIN:VCARD',
+      'VERSION:3.0',
+      'N:Hadid;Josephine;;;',
+      'FN:Josephine Hadid',
+      'TEL;TYPE=WORK,VOICE:+421912785456',
+      'EMAIL:josephinehadid@gmail.com',
+      'ADR;TYPE=WORK:;;Sancova 26;Bratislava;;88-112;Slovakia',
+      'END:VCARD'
+    ].join('\\r\\n');
+    const blob = new Blob([vcard], {type:'text/vcard'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'Josephine-Hadid.vcf';
+    document.body.appendChild(a); a.click();
+    a.remove(); URL.revokeObjectURL(url);
+  }
+</script>
+</body>
+</html>
